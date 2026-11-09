@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How HELIX was made | William Louiselle</title>
+<style>
+:root{--text:#0F1A14;--bg:#F7F8F5;--primary:#1E4D2B;--secondary:#E3EBE4;--accent:#3D5A80;--rule:#C9D6CC;
+--head:"Inter Tight",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+--body:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:1.0625rem;line-height:1.65}
+.wrap{max-width:42rem;margin:0 auto;padding:0 1.25rem}
+.band{background:var(--primary);color:#fff;padding:1.5rem 0 2.25rem}
+.band a{color:#fff;text-underline-offset:3px;font-size:.95rem}
+.kicker{margin:2rem 0 .25rem;color:var(--secondary);font-size:.95rem}
+h1{font-family:var(--head);letter-spacing:-.02em;font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.15;margin:0;font-weight:700}
+main{padding:2rem 0 2.5rem}
+.intro{font-size:1.15rem;margin:0 0 .5rem}
+h2{font-family:var(--head);letter-spacing:-.01em;font-size:1.2rem;color:var(--primary);margin:2rem 0 .5rem;padding-top:1.25rem;border-top:1px solid var(--rule)}
+p{margin:0 0 .9rem}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.band a:focus-visible{outline-color:#fff}
+.fill{background:#FFF1A8;color:#3a3000;border-bottom:2px dashed #B38F00;padding:0 .2em}
+footer{border-top:1px solid var(--rule);padding:1.25rem 0 2.5rem;font-size:.95rem;color:#3E4A42}
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <a href="../index.html">Back to portfolio</a>
+    <p class="kicker">How this was made</p>
+    <h1>HELIX</h1>
+  </div>
+</header>
+<main class="wrap">
+<p class="intro">HELIX is a Python data-integrity tool for regulated labs that flags instrument files altered after recording. I’m co-developing it with an ISAT major.</p>
+<h2>What I asked AI to do</h2>
+<p>I used Claude Code to start developing HELIX. I gave Claude my ideas for a joint project between a CIS major and an ISAT major.</p>
+<h2>What I did myself</h2>
+<p>I created the repository using Claude Code and refined the project’s requirements.</p>
+<p>I own the security layer: file hashing, digital signatures, access control, and an append-only audit log aligned with FDA 21 CFR Part 11 electronic-records requirements.</p>
+<h2>How I checked it</h2>
+<p><span class="fill">[Describe how you tested or reviewed the code, such as confirming that altered files are flagged or that audit log entries can’t be changed.]</span></p>
+<h2>Tools</h2>
+<p>Python, Claude Code</p>
+</main>
+<footer class="wrap">
+  <p>William Louiselle, Computer Information Systems, James Madison University. <a href="../index.html">Back to portfolio</a></p>
+</footer>
+</body>
+</html>
